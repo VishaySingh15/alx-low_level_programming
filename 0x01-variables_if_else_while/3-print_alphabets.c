@@ -22,6 +22,7 @@ int main(void)
 		}
 		else if (a == 'Z')
 		{
+			putchar('\n');
 			return (0);
 		}
 		else
@@ -29,6 +30,5 @@ int main(void)
 			a++;
 		}
 	}
-	putchar('\n');
 	return (0);
 }
