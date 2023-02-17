@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: 'This program outputs the all possible 
+ * Description: 'This program outputs the all possible
  * different combinations of two digits
  *
  * Return: Always 0 (Success)
@@ -13,14 +13,12 @@ int main(void)
 {
 	int num, n, reverse = 0, remainder, array_count = 0, num_length;
 	int numbers[45];
-
 	for (num = 10; num < 100; num++)
 	{
 		n = num;
 		while (n != 0)
 		{
-			remainder = n % 10;
-			reverse = reverse * 10 + remainder;
+			remainder = n % 10; reverse = reverse * 10 + remainder;
 			n /= 10;
 		}
 		if (reverse < num)
@@ -30,7 +28,6 @@ int main(void)
 		}
 		reverse = 0;
 	}
-	
 	num_length = sizeof(numbers) / sizeof(numbers[0]);
 	for (num = 0; num < num_length; num++)
 	{
@@ -40,11 +37,10 @@ int main(void)
 			{
 				reverse = numbers[n];
 				numbers[n] = numbers[n + 1];
-				numbers [n + 1] = reverse;
+				numbers[n + 1] = reverse;
 			}
 		}
 	}
-
 	for (num = 0; num < num_length; num++)
 	{
 		if (numbers[num] != 0)
@@ -60,6 +56,5 @@ int main(void)
 			putchar(32);
 		}
 	}
-
 	return (0);
 }
