@@ -7,7 +7,7 @@
 /**
  * main - Entry point
  *
- * Description: 'This program outputs the last digit of a number and if it is 
+ * Description: 'This program outputs the last digit of a number and if it is
  * high or lower than 5'
  *
  * Return: Always 0 (Success)
