@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: 'This program outputs the all possible different combinations of two digits
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int num, n, reverse = 0, remainder, array_count=0, num_length;
