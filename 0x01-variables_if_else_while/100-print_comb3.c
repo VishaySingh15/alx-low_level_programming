@@ -17,7 +17,6 @@ int main(void)
 		}
 		if (reverse < num)
 		{
-			printf("%d, ", reverse);
 			numbers[array_count] = reverse;
 			array_count++;
 		}
