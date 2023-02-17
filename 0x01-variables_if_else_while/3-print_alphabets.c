@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: 'This program outputs the alphabet in lower and upper case
+ * high or lower than 5'
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 
@@ -21,6 +29,6 @@ int main(void)
 			a++;
 		}
 	}
-
+	putchar('\n');
 	return (0);
 }
