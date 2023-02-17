@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 /* more headers goes there */
 
@@ -7,25 +8,22 @@ int main(void)
 {
 	int n;
 	int last_digit;
-	char output[50];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	last_digit = n%10;
-	output = "Last digit of " + n + " is " + last_digit;
-	if (last_digit>5)
+	last_digit = n % 10;
+	if (last_digit > 5)
 	{
-		output = output + " and is greater than 5";
+		printf("Last digit of %d is %d and is greater than 5", n, last_digit);
 	}
 	else if (last_digit == 0)
 	{
-		output = output + " and is 0";
+		printf("Last digit of %d is %d and is 0", n, last_digit);
 	}
 	else
 	{
-		output = output + " and is less than 6 and not 0";
+		printf("Last digit of %d is %d and is less than 6 and not 0", n, last_digit);
 	}
-	printf(output);
 	return (0);
 }
