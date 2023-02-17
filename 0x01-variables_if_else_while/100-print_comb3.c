@@ -46,6 +46,7 @@ int main(void)
 			putchar((numbers[num]%10) + 48);
 			if (numbers[num] == 89)
 			{
+				putchar('\n');
 				return (0);
 			}
 			putchar(44);
