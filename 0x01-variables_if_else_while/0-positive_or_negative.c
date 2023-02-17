@@ -4,7 +4,13 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/* This function outputs whether a number is positive or negative */
+/**
+ * main - Entry point
+ * 
+ * Description: 'This program outputs whether a number is positive or negative'
+ * 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
