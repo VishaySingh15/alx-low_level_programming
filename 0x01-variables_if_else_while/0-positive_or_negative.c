@@ -3,7 +3,9 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* betty style doc for function main goes there 
+ * This function outputs whether a number is positive or negative
+ */
 int main(void)
 {
 	int n;
