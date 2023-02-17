@@ -13,12 +13,14 @@ int main(void)
 {
 	int num, n, reverse = 0, remainder, array_count = 0, num_length;
 	int numbers[45];
+	
 	for (num = 10; num < 100; num++)
 	{
 		n = num;
 		while (n != 0)
 		{
-			remainder = n % 10; reverse = reverse * 10 + remainder;
+			remainder = n % 10;
+			reverse = reverse * 10 + remainder;
 			n /= 10;
 		}
 		if (reverse < num)
