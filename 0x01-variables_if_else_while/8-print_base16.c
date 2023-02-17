@@ -19,7 +19,7 @@ int main(void)
 		{
 			alpha = 'a';
 		}
-		else if (alpha == 'f')
+		else if (alpha == 'g')
 		{
 			putchar('\n');
 			return (0);
