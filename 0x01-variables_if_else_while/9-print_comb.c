@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: 'This program outputs base 10 digits separated by a comma
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int num = 48;
