@@ -4,16 +4,17 @@
 /**
  * main - Entry point
  *
- * Description: 'This program outputs the all possible different combinations of two digits
+ * Description: 'This program outputs the all possible 
+ * different combinations of two digits
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num, n, reverse = 0, remainder, array_count=0, num_length;
+	int num, n, reverse = 0, remainder, array_count = 0, num_length;
 	int numbers[45];
 
-	for (num = 10; num<100; num++)
+	for (num = 10; num < 100; num++)
 	{
 		n = num;
 		while (n != 0)
@@ -31,16 +32,15 @@ int main(void)
 	}
 	
 	num_length = sizeof(numbers) / sizeof(numbers[0]);
-
-	for (num = 0; num <num_length; num++)
+	for (num = 0; num < num_length; num++)
 	{
-		for (n = 0; n < num_length-1; n++)
+		for (n = 0; n < num_length - 1; n++)
 		{
-			if (numbers[n] > numbers[n+1])
+			if (numbers[n] > numbers[n + 1])
 			{
 				reverse = numbers[n];
-				numbers[n] = numbers[n+1];
-				numbers [n+1] = reverse;
+				numbers[n] = numbers[n + 1];
+				numbers [n + 1] = reverse;
 			}
 		}
 	}
@@ -49,8 +49,8 @@ int main(void)
 	{
 		if (numbers[num] != 0)
 		{
-			putchar((numbers[num]/10) + 48);
-			putchar((numbers[num]%10) + 48);
+			putchar((numbers[num] / 10) + 48);
+			putchar((numbers[num] % 10) + 48);
 			if (numbers[num] == 89)
 			{
 				putchar('\n');
