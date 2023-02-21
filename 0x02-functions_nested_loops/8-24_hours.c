@@ -22,11 +22,11 @@ void jack_bauer(void)
 				min2 = 0;
 				while (min2 <= min2_lim)
 				{
-					_putchar(hour1+48);
-					_putchar(hour2+48);
+					_putchar(hour1 + 48);
+					_putchar(hour2 + 48);
 					_putchar(58);
-					_putchar(min1+48);
-					_putchar(min2+48);
+					_putchar(min1 + 48);
+					_putchar(min2 + 48);
 					_putchar('\n');
 					min2 ++;
 				}
