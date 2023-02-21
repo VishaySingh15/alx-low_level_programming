@@ -53,6 +53,7 @@ void print_to_98(int num)
 				mod = num % -10;
 				digits[arr_count] = mod;
 				slash = num / -10;
+				_putchar('-');
 			}
 			else
 			{
