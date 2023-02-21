@@ -2,6 +2,11 @@
 
 /**
  * _islower - determines if a character is lowercase
+ *
+ * @c: Character in ASCII code
+ *
+ * Return: 1 If lowercase
+ * Return: 0 If not lowercase
  */
 int _islower(int c)
 {
