@@ -80,7 +80,7 @@ void print_to_98(int num)
 				_putchar(44);
 				_putchar(32);
 			}
-			num--;
+			num++;
 		}
 	}
 }
