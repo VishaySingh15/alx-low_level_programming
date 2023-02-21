@@ -67,6 +67,7 @@ void print_to_98(int num)
 				else
 				{
 					digits[arr_count] = digits[arr_count] * -1;
+					_putchar('-');
 					_putchar(digits[arr_count] + 48);
 				}
 				arr_count--;
