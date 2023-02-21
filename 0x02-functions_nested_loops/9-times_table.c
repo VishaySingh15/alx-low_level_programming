@@ -4,10 +4,11 @@
  */
 void times_table(void)
 {
-	int num = 0, mult = 0, result, dig1, dig2;
+	int num = 0, mult, result, dig1, dig2;
 
 	while (num <= 9)
 	{
+		mult = 0;
 		while (mult <= 9)
 		{
 			result = num * mult;
@@ -15,12 +16,12 @@ void times_table(void)
 			{
 				dig1 = result / 10;
 				dig2 = result % 10;
-				_putchar(dig1+48);
-				_putchar(dig2+48);
+				_putchar(dig1 + 48);
+				_putchar(dig2 + 48);
 			}
 			else
 			{
-				_putchar(result+48);
+				_putchar(result + 48);
 			}
 			if (mult != 9)
 			{
