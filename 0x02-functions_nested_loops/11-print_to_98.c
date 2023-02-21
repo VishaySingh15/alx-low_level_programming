@@ -8,8 +8,8 @@
  */
 void print_to_98(int num)
 {
-	int[5] digits;
-	int arr_count, slash, mod, num_copy;
+	int digits[] = {0,0,0,0,0};
+	int arr_count, slash, mod;
 	
 	if (num >= 98)
 	{
@@ -23,7 +23,7 @@ void print_to_98(int num)
 			{
 				mod = slash % 10;
 				arr_count++;
-				digit[arr_count] = mod;
+				digits[arr_count] = mod;
 				slash = slash / 10;
 			}
 			while (arr_count >= 0)
