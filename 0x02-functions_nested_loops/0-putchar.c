@@ -1,5 +1,4 @@
 #include "main.h"
-/* more headers goes there */
 
 /**
  * main - prints the word _putchar
@@ -12,7 +11,7 @@ int main(void)
 
 	/* your code goes there */
 	message_len = sizeof(message) / sizeof(message[0]);
-	for (count = 0; count < message_len-1; count++)
+	for (count = 0; count < message_len - 1; count++)
 	{
 		_putchar(message[count]);
 	}
