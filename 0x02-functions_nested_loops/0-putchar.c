@@ -1,9 +1,10 @@
 #include "main.h"
 /* more headers goes there */
 
-/* This program prints the word _putchar 
+/**
+ * main - prints the word _putchar
  * Return 0 is success
-*/
+ */
 int main(void)
 {
 	char message[] = "_putchar";
