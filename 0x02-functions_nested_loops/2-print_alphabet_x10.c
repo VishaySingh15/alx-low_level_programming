@@ -13,7 +13,9 @@ void print_alphabet_x10(void)
 		while(alpha < 123)
 		{
 			_putchar(alpha);
+			alpha++;
 		}
 		_putchar('\n');
+		count++;
 	}
 }
