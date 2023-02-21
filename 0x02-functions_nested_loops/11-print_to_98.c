@@ -49,6 +49,7 @@ void print_to_98(int num)
 		{
 			arr_count = 0;
 			mod = num % 10;
+			_putchar(mod);
 			digits[arr_count] = mod;
 			slash = num / 10;
 			while (slash > 0)
