@@ -21,7 +21,7 @@ void times_table(void)
 			}
 			else
 			{
-				if (mult != 1)
+				if (mult != 0)
 				{
 					_putchar(' ');
 					_putchar(result + 48);
