@@ -1,7 +1,8 @@
 #include "main.h"
-/* more headers goes there */
 
-/* This program prints the word _putchar */
+/**
+ * print_alphabet_x10 - prints the word _putchar 10 times
+ */
 void print_alphabet_x10(void)
 {
 	int count = 0, alpha;
