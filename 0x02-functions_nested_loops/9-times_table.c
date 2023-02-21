@@ -21,7 +21,15 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(result + 48);
+				if (mult != 1)
+				{
+					_putchar(' ');
+					_putchar(result + 48);
+				}
+				else
+				{
+					_putchar(result + 48);
+				}
 			}
 			if (mult != 9)
 			{
