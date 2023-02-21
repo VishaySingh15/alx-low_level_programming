@@ -12,10 +12,13 @@ void jack_bauer(void)
 		{
 			hour2_lim = 3;
 		}
+		hour2 = 0;
 		while (hour2 <= hour2_lim)
 		{
+			min = 0;
 			while (min1 <= min1_lim)
 			{
+				min2 = 0;
 				while (min2 <= min2_lim)
 				{
 					_putchar(hour1+48);
