@@ -28,12 +28,12 @@ void jack_bauer(void)
 					_putchar(min1 + 48);
 					_putchar(min2 + 48);
 					_putchar('\n');
-					min2 ++;
+					min2++;
 				}
-				min1 ++;
+				min1++;
 			}
-			hour2 ++;
+			hour2++;
 		}
-		hour1 ++;
+		hour1++;
 	}
 }
