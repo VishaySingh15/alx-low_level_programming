@@ -8,9 +8,9 @@
  */
 void print_to_98(int num)
 {
-	int digits[] = {0,0,0,0,0};
+	int digits[] = {0, 0, 0, 0, 0};
 	int arr_count, slash, mod;
-	
+
 	if (num >= 98)
 	{
 		while (num >= 98)
@@ -29,7 +29,7 @@ void print_to_98(int num)
 			while (arr_count >= 0)
 			{
 				_putchar(digits[arr_count] + 48);
-				arr_count --;
+				arr_count--;
 			}
 			if (num == 98)
 			{
@@ -47,7 +47,7 @@ void print_to_98(int num)
 	{
 		while (num <= 98)
 		{
-			if (num < 0 )
+			if (num < 0)
 			{
 				arr_count = 0;
 				mod = num % -10;
