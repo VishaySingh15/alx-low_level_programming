@@ -2,6 +2,10 @@
 
 /**
  * _abs - returns the absolute value of an integer
+ *
+ * @a: integer
+ *
+ * Return: absolute value of the integer
  */
 int _abs(int a)
 {
