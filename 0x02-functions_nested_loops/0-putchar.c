@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 /* more headers goes there */
 
 /* This program prints the word _putchar */
