@@ -11,7 +11,7 @@ int main(void)
 	message_len = sizeof(message)/sizeof(message[0]);
 	for (count = 0; count < message_len; count++)
 	{
-		putchar(message[count]);
+		_putchar(message[count]);
 	}
 	return (0);
 }
