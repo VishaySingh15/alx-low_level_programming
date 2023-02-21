@@ -55,7 +55,7 @@ void print_to_98(int num)
 			{
 				mod = slash % 10;
 				arr_count++;
-				digit[arr_count] = mod;
+				digits[arr_count] = mod;
 				slash = slash / 10;
 			}
 			while (arr_count >= 0)
