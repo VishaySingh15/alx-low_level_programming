@@ -2,6 +2,10 @@
 
 /**
  * _isalpha - determines if a character is a letter
+ *
+ * @c: Int in ASCII code
+ *
+ * Return: 1 if character is a letter and 0 if not
  */
 int _isalpha(int c)
 {
