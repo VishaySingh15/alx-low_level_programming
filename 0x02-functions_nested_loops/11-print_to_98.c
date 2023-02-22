@@ -23,4 +23,5 @@ void print_to_98(int num)
 			num++;
 		}
 	}
+	putchar('\n');
 }
