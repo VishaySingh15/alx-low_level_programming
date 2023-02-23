@@ -16,15 +16,15 @@ void main(void)
 	{
 		if (count % 3 == 0 && count % 5 == 0)
 		{
-			printf('FizzBuzz');
+			printf('%s', 'FizzBuzz');
 		}
 		else if (count % 3 == 0)
 		{
-			printf('Fizz');
+			printf('%s', 'Fizz');
 		}
 		else if (count % 5 == 0)
 		{
-			printf('Buzz');
+			printf('%s', 'Buzz');
 		}
 		else
 		{
