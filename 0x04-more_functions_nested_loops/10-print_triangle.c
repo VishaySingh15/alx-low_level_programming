@@ -9,7 +9,7 @@
 void print_triangle(int size)
 {
 	int c, count, hash = 1;
-	
+
 	while (size > 0)
 	{
 		c = size - 1;
