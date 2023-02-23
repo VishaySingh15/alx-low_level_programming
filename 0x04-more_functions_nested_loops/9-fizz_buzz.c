@@ -5,10 +5,10 @@
  * main - Prints numbers 1 to 100 and fizz if
  * multiple of 3, buzz if multiple of 5 and
  * fizzbuzz if multiple of 3 and 5
- * Return: No Return values
+ * Return: 0 success
  */
 
-void main(void)
+int main(void)
 {
 	int count = 1;
 	
@@ -33,4 +33,5 @@ void main(void)
 		putchar(' ');
 		count++;
 	}
+	return (0);
 }
