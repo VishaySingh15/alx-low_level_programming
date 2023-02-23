@@ -11,21 +11,20 @@
 int main(void)
 {
 	int count = 1;
-	char three[] = "Fizz", five[] = "Buzz", both[] = "FizzBuzz";
 	
 	while (count <= 100)
 	{
-		if (count % 3 == 0 && count % 5 == 0)
+		if ((count % 3 == 0) && (count % 5 == 0))
 		{
-			printf('%s', both);
+			printf("FizzBuzz");
 		}
 		else if (count % 3 == 0)
 		{
-			printf('%s', three);
+			printf("Fizz");
 		}
 		else if (count % 5 == 0)
 		{
-			printf('%s', five);
+			printf("Buzz");
 		}
 		else
 		{
