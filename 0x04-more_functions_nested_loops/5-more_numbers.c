@@ -17,7 +17,7 @@ void more_numbers(void)
 			num = 0;
 			if (num2 == 1)
 			{
-				limit = 4
+				limit = 4;
 			}
 			while (num <= limit)
 			{
@@ -25,7 +25,7 @@ void more_numbers(void)
 				{
 					_putchar(49);
 				}
-				_putchar(num);
+				_putchar(num + 48);
 				num++;
 			}
 			num2++;
