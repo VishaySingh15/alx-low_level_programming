@@ -12,7 +12,7 @@ int main(void)
 {
 	int count = 1;
 	
-	printf("%d", n);
+	printf("%d", count);
 	count++;
 	while (count <= 100)
 	{
