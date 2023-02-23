@@ -11,7 +11,7 @@
 int main(void)
 {
 	int count = 1;
-	char[] three = "Fizz", five = "Buzz", both = "FizzBuzz";
+	char three[] = "Fizz", five[] = "Buzz", both[] = "FizzBuzz";
 	
 	while (count <= 100)
 	{
