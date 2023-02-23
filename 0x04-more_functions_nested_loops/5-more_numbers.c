@@ -12,6 +12,7 @@ void more_numbers(void)
 	while (c < 10)
 	{
 		num2 = 0;
+		limit = 9;
 		while (num2 < 2)
 		{
 			num = 0;
