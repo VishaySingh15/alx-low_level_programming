@@ -12,7 +12,7 @@ int _atoi(char *s)
 
 	while (*(s + len) != 0)
 	{
-		if (num_over != 0)
+		if (num_over == 0)
 		{
 			if (*(s + len) == 45)
 			{
