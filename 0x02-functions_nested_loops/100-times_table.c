@@ -29,6 +29,7 @@ void print_times_table(int n)
 				_putchar(dig + 48);
 				num2++;
 			}
+			_putchar('\n');
 			num++;
 			if (num != n)
 			{
@@ -36,5 +37,6 @@ void print_times_table(int n)
 				_putchar(' ');
 			}
 		}
+		_putchar('\n');
 	}
 }
