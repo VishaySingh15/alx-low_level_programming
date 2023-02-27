@@ -20,7 +20,7 @@ int _atoi(char *s)
 			}
 			else if (*(s + len) >= 48 || *(s + len) <= 57)
 			{
-				val += val * 10;
+				val = val * 10;
 				val += *(s + len) - 48;
 			}
 			else if (val > 0)
