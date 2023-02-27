@@ -20,8 +20,16 @@ int _atoi(char *s)
 			}
 			else if (*(s + len) >= 48 && *(s + len) <= 57)
 			{
-				val = val * 10;
-				val += *(s + len) - 48;
+				if (sign % 2 == 0)
+				{
+					val = val * 10;
+					val += (*(s + len) - 48);
+				}
+				else
+				{
+					val = val * 10;
+					val -= (*(s + len) - 48);
+				}
 			}
 			else if (val > 0)
 			{
@@ -34,12 +42,8 @@ int _atoi(char *s)
 	{
 		return (0);
 	}
-	else if (sign % 2 == 0)
-	{
-		return (val);
-	}
 	else
 	{
-		return (-val);
+		return (val);
 	}
 }
