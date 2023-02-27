@@ -11,11 +11,11 @@ void print_array(int *a, int n)
 {
 	int count = 0;
 	
-	printf("%p", *(a + count));
+	printf("%d", *(a + count));
 	count++;
 	while (count < n)
 	{
-		printf(" ,%p", *(a + count));
+		printf(" ,%d", *(a + count));
 		count++;
 	}
 	_putchar('\n');
