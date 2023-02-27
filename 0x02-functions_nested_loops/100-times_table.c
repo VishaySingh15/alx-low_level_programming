@@ -4,7 +4,7 @@
  */
 void print_times_table(int n)
 {
-	int num = 0, num2 = 0, mult, result, dig;
+	int num = 0, num2 = 0, result, dig;
 	if (n >= 0 && n <= 15)
 	{
 		while (num <= n)
