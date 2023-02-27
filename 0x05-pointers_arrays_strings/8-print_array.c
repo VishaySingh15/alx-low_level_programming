@@ -9,7 +9,7 @@
 
 void print_array(int *a, int n)
 {
-	count = 0;
+	int count = 0;
 
 	while (count < n)
 	{
