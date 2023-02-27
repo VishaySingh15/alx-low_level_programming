@@ -19,3 +19,5 @@ void puts2(char *s)
 		_putchar(*(s + count));
 		count+=2;
 	}
+	_putchar('\n');
+}
