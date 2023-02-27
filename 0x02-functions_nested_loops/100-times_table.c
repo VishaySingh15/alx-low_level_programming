@@ -20,7 +20,7 @@ void print_times_table(int n)
 					dig = dig % 10;
 					_putchar(dig + 48);
 				}
-				else
+				else if (dig > 0)
 				{
 					_putchar(dig + 48);
 				}
