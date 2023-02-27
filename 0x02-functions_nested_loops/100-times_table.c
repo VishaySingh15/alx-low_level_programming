@@ -28,7 +28,7 @@ void print_times_table(int n)
 				dig = dig % 10;
 				_putchar(dig + 48);
 				num2++;
-				if (num != n)
+				if (num2 != n)
 				{
 					_putchar(',');
 					_putchar(' ');
