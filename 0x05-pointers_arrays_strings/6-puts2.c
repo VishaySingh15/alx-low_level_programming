@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_string - Reverses the string
+ * puts2 - Prints ever other letter
  * @s: String pointer
  * Return: no return
  */
@@ -17,7 +17,7 @@ void puts2(char *s)
 	while (count < len)
 	{
 		_putchar(*(s + count));
-		count+=2;
+		count += 2;
 	}
 	_putchar('\n');
 }
