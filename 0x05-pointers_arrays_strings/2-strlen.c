@@ -12,7 +12,7 @@ int _strlen(char *s)
 
 	while (ex == 0)
 	{
-		if (*(s+len) == 0)
+		if (*(s + len) == 0)
 		{
 			ex = 1;
 		}
