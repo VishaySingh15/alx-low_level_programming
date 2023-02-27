@@ -4,11 +4,12 @@
  */
 void print_times_table(int n)
 {
-	int num = 0, num2 = 0, result, dig;
+	int num = 0, num2, result, dig;
 	if (n >= 0 && n <= 15)
 	{
 		while (num <= n)
 		{
+			num2 = 0;
 			while (num2 <= n)
 			{
 				result = num * num2;
