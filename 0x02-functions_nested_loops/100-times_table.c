@@ -28,14 +28,14 @@ void print_times_table(int n)
 				dig = dig % 10;
 				_putchar(dig + 48);
 				num2++;
+				if (num != n)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			_putchar('\n');
 			num++;
-			if (num != n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
 		}
 		_putchar('\n');
 	}
