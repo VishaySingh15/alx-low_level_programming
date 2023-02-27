@@ -9,7 +9,7 @@ void print_times_table(int n)
 	{
 		while (num <= n)
 		{
-			while (num2 < n)
+			while (num2 <= n)
 			{
 				result = num * num2;
 				dig = result / 10;
