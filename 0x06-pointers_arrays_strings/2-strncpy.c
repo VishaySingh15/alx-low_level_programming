@@ -8,7 +8,7 @@
  * Return: dest - string pointer to destination
  */
 
-char *_strcpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int len_dest = 0, len_src = 0;
 
