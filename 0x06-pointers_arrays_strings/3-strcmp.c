@@ -3,7 +3,7 @@
 /**
  * _strcmp - Copies n characters from src to dest
  * @s1: String 1 pointer
- * @src: String 2 pointer
+ * @s2: String 2 pointer
  * Return: -15 - for s1 > s2, 15 for s2 > s1, 0 for s1 = s2
  */
 
