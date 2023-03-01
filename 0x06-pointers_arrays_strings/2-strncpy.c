@@ -21,5 +21,11 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		*(dest + len_src) = '\n';
 	}
+	while (*(dest + len_src) != 0)
+	{
+		len_src++;
+	}
+	*(dest + len_src) = '\n';
+	*(dest + len_src + 1) = 0;
 	return (dest);
 }
