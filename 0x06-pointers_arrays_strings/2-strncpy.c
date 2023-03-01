@@ -17,7 +17,7 @@ char *_strncpy(char *dest, char *src, int n)
 		*(dest + len_src) = *(src + len_src);
 		len_src++;
 	}
-	if (*(src + len_src) != '\n')
+	if (*(src + len_src) == '\n')
 	{
 		*(dest + len_src) = 0;
 	}
