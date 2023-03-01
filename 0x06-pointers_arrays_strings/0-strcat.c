@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _strcat - Copies string from source pointer and appends to destination pointer
+ * _strcat - Copies string from source 
+ * pointer and appends to destination pointer
  * @dest: String pointer for destination
  * @src: String pointer for source
  * Return: dest - string pointer to destination
