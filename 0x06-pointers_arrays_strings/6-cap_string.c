@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - Copies n characters from src to dest
+ * cap_string - Captalizes all words in a string
  * @s: String pointer
  * Return: no return
  */
