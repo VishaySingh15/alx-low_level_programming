@@ -12,15 +12,16 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int len_src = 0;
 
-	while (*(src + len_src) != '\n' && len_src < n)
+	while (len_src < n)
 	{
+		if (*(src + len_src) == '\n')
+		{
+			*(dest + len_src) = *(src + len_src);
+			*(dest + len_src + 1) = 0;
+			break;
+		}
 		*(dest + len_src) = *(src + len_src);
 		len_src++;
-	}
-	if (*(src + len_src) == '\n')
-	{
-		*(dest + len_src) = '\n';
-		*(dest + len_src + 1) = 0;
 	}
 	return (dest);
 }
