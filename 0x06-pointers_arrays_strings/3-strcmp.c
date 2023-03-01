@@ -7,7 +7,7 @@
  * Return: -15 - for s1 > s2, 15 for s2 > s1, 0 for s1 = s2
  */
 
-int *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int len_s1 = 0, len_s2 = 0;
 
