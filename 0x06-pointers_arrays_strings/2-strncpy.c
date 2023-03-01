@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	if (*(src + len_src) == '\n')
 	{
-		*(dest + len_src) = '\n';
+		*(dest + len_src) = 0;
 	}
 	while (*(dest + len_src) != 0)
 	{
