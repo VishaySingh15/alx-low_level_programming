@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - Appends n characters from src to dest
+ * _strncat - Appends n characters from src to dest
  * @dest: String pointer for destination
  * @src: String pointer for source
  * @n: Number of characters to append from src
