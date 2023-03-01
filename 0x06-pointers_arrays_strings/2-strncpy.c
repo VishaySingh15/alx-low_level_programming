@@ -25,7 +25,5 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		len_src++;
 	}
-	*(dest + len_src) = '\n';
-	*(dest + len_src + 1) = 0;
 	return (dest);
 }
