@@ -22,7 +22,10 @@ char cap_string(char *s)
 			if (*(s + len_s) == sep_words[count])
 			{
 				if ((*(s + (len_s + 1)) >= 97) && (*(s + (len_s + 1)) <= 122))
+				{
 					*(s + (len_s + 1)) = *(s + (len_s + 1)) - 32;
+				}
+					
 				break;
 			}
 		}
