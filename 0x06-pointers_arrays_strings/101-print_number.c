@@ -23,7 +23,7 @@ void print_number(int n)
 	while (n != 0)
 	{
 		rem = n % mod;
-		_putchar(rem);
+		_putchar(rem + 48);
 		rev = rev * 10 + rem;
 		n = (n / mod) * neg;
 	}
