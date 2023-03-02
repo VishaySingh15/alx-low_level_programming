@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _string_toupper - Capitlaises all lower case letters
+ * string_toupper - Capitlaises all lower case letters
  * @s: String pointer
  * Return: no return
  */
