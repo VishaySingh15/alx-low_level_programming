@@ -13,7 +13,7 @@ void reverse_array(int *a, int n)
 
 	while (n_half < n / 2 )
 	{
-		temp = *(a + n_half)
+		temp = *(a + n_half);
 		*(a + n_half) = *(a + n - n_half - 1);
 		*(a + n - n_half - 1) = temp;
 		n_half++;
