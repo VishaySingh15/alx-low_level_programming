@@ -8,7 +8,7 @@
 
 void print_number(int n)
 {
-	int negative = 0, rem, rev = 0, mod = 10;
+	int rem, rev = 0, mod = 10;
 	
 	if (n < 0)
 	{
