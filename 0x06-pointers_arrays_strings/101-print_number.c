@@ -22,7 +22,7 @@ void print_number(int n)
 	{
 		rem = n % mod;
 		rev = rev * 10 + rem;
-		n = n / mod;
+		n = (n / mod) * -1;
 	}
 	if (n < 0)
 	{
