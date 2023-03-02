@@ -8,11 +8,12 @@
 
 void print_number(int n)
 {
-	int rem, rev = 0, mod = 10;
+	int rem, rev = 0, mod = 10, neg = 1;
 	
 	if (n < 0)
 	{
 		mod = -10;
+		neg = -1;
 	}
 	else if (n == 0)
 	{
@@ -22,7 +23,7 @@ void print_number(int n)
 	{
 		rem = n % mod;
 		rev = rev * 10 + rem;
-		n = (n / mod) * -1;
+		n = (n / mod) * neg;
 	}
 	if (n < 0)
 	{
