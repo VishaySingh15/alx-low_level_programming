@@ -8,28 +8,27 @@
 
 void print_number(int n)
 {
-	int negative = 0, rem, dig = 10, rev = 0;
+	int negative = 0, rem, rev = 0;
 	
 	if (n < 0)
 	{
 		n = n * -1;
 		negative = 1;
 	}
-	while (dig > 0)
+	while (n > 0)
 	{
 		rem = n % 10;
 		rev = rev * 10 + rem;
-		dig = n / 10;
+		n = n / 10;
 	}
 	if (negative > 0)
 	{
 		_putchar('-');
 	}
-	dig = 10;
-	while (dig > 0)
+	while (rev > 0)
 	{
 		rem = rev % 10;
 		_putchar(rem + 48);
-		dig = rev / 10;
+		rev = rev / 10;
 	}
 }
