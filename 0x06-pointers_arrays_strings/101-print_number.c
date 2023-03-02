@@ -15,6 +15,10 @@ void print_number(int n)
 		n = n * -1;
 		negative = 1;
 	}
+	else if (n == 0)
+	{
+		_putchar(48);
+	}
 	while (n > 0)
 	{
 		rem = n % 10;
