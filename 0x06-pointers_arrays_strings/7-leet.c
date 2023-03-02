@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _strncpy - Copies n characters from src to dest
- * @dest: String pointer for destination
- * @src: String pointer for source
- * @n: Number of characters to append from src
- * Return: dest - string pointer to destination
+ * leet - Encodes a string to 1337
+ * @s: String pointer
+ * Return: S - Encoded string
  */
 
 char *leet(char *s)
