@@ -19,7 +19,7 @@ void print_number(int n)
 	{
 		rem = n % 10;
 		rev = rev * 10 + rem;
-		dig = rev / 10;
+		dig = n / 10;
 	}
 	if (negative > 0)
 	{
