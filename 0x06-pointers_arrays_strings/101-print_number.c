@@ -25,6 +25,7 @@ void print_number(int n)
 	{
 		_putchar('-');
 	}
+	dig = 10;
 	while (dig > 0)
 	{
 		rem = rev % 10;
