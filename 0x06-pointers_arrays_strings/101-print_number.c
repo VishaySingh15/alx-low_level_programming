@@ -8,13 +8,12 @@
 
 void print_number(int n)
 {
-	int rem, rev = 0, mod = 10, neg = 1;
+	int rem, rev = 0, mod = 10;
 	
 	if (n < 0)
 	{
 		_putchar('-');
-		mod = -10;
-		neg = -1;
+		n = n * - 1;
 	}
 	else if (n == 0)
 	{
@@ -25,6 +24,12 @@ void print_number(int n)
 		rem = n % mod;
 		_putchar(rem + 48);
 		rev = rev * 10 + rem;
-		n = (n / mod) * neg;
+		n = (n / mod);
+	}
+	while (rev > 0)
+	{
+		rem = rev % mod;
+		_putchar(rem + 48);
+		rev = (rev / mod);
 	}
 }
