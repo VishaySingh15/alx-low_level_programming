@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * _memset - Fills first n bytes of memory with char b
- * @s: String pointer for a set
- * @b: Replacement character
+ * _memcpy - Copies n bytes from src to dest
+ * @dest: String pointer for a destination
+ * @src: String pointer for source
  * @n: Number of characters to replace
- * Return: s - string pointer to set
+ * Return: dest - string pointer to source
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char src, unsigned int n)
 {
 	unsigned int count = 0;
 	while (count < n)
 	{
-		*(s + count) = b;
+		*(dest + count) = *(src + count);
 		count++;
 	}
-	return (s);
+	return (dest);
 }
