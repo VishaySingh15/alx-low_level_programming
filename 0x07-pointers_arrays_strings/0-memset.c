@@ -8,12 +8,13 @@
  * Return: s - string pointer to set
  */
 
-char *_memset(char *s, char b, int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int count = 0;
+	unsigned int count = 0;
 	while (count < n)
 	{
 		*(s + count) = b;
+		count++;
 	}
 	return (s);
 }
