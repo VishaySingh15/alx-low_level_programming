@@ -9,7 +9,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int count, count1 = 0;
+	int count = 0, count1;
 
 	while (*(s + count) != 0)
 	{
