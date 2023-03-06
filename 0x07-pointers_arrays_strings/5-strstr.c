@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strpbrk - Checks for first occurence of byte
- * @s: String pointer for string
- * @accept: bytes to accept
- * Return: s - string pointer
+ * _strstr - Checks if a substring is located in a string
+ * @haystack: String pointer
+ * @needle: substring to check for
+ * Return: haystack - string pointer
  */
 
 char *_strstr(char *haystack, char *needle)
