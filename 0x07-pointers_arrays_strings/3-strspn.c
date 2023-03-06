@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strchr - Copies n bytes from src to dest
+ * _strspn - Returns the length of a prefix substring
  * @s: String pointer for string
- * @c: char to find
- * Return: dest - string pointer to source
+ * @accept: chars to accept
+ * Return: int - substring prefix
  */
 
 unsigned int _strspn(char *s, char *accept)
