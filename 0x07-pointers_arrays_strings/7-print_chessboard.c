@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * _strpbrk - Checks for first occurence of byte
- * @s: String pointer for string
- * @accept: bytes to accept
- * Return: s - string pointer
+ * print_chessboard - Prints chessboard
+ * @a: Array pointer
+ * Return: no return
  */
 
 void print_chessboard(char (*a)[8])
