@@ -21,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 			count_needle++;
 			while (*(needle + count_needle) != 0)
 			{
-				if (*needle == *(haystack + count))
+				if (*(needle+count_needle) == *(haystack + count))
 				{
 					count1++;
 				}
