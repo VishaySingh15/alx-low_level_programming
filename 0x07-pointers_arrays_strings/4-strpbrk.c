@@ -9,7 +9,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int count, count1 = 0;
+	int count, count1 = 0;
 
 	while (*(accept + count1) != 0)
 	{
@@ -18,7 +18,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*(s + count) == *(accept + count1))
 			{
-				return (*(s + count));
+				return (s + count);
 			}
 			count++;
 		}
