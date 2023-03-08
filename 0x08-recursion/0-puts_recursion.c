@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _memcpy - Copies n bytes from src to dest
- * @dest: String pointer for a destination
- * @src: String pointer for source
- * @n: Number of characters to replace
- * Return: dest - string pointer to source
+ * _puts_recursion - Prints a string using recursion
+ * @s: String pointer
+ * Return: no return
  */
 
 void _puts_recursion(char *s)
@@ -14,6 +12,7 @@ void _puts_recursion(char *s)
 
 	if (*(s + count) == 0)
 	{
+		_putchar('\n');
 		return;
 	}
 	_putchar(*(s + count));
