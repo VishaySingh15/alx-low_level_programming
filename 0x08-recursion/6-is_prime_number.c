@@ -17,7 +17,7 @@ int _mod(int n, int factor)
 	{
 		return (1);
 	}
-	return(0 + _mod(n, factor + 1));
+	return (0 + _mod(n, factor + 1));
 }
 
 /**
