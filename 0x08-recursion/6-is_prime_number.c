@@ -1,22 +1,29 @@
 #include "main.h"
 
-int _mod(int n, int count)
+/**
+ * _mod - Checks if number is prime
+ * @n: Integer
+ * @factor: factor of number
+ * Return: 1 if prime or 0 if not
+ */
+
+int _mod(int n, int factor)
 {
-	if (n % count == 0 )
+	if (n % factor == 0 && factor != n)
 	{
 		return (0);
 	}
-	if (count == n)
+	if (countor == n)
 	{
 		return (1);
 	}
-	return(0 + _mod(n, count + 1));
+	return(0 + _mod(n, countor + 1));
 }
 
 /**
- * _strlen_recursion - Returns the length of a string
- * @s: String pointer
- * Return: no return
+ * is_prime_number - Returns if number is prime
+ * @n: Number
+ * Return: 1 if prime or 0 if not
  */
 
 int is_prime_number(int n)
