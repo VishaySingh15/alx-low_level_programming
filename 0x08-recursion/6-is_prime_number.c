@@ -13,11 +13,11 @@ int _mod(int n, int factor)
 	{
 		return (0);
 	}
-	if (countor == n)
+	if (factor == n)
 	{
 		return (1);
 	}
-	return(0 + _mod(n, countor + 1));
+	return(0 + _mod(n, factor + 1));
 }
 
 /**
