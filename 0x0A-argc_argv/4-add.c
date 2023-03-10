@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	{
 		argc--;
 		a = atoi(argv[b - argc]);
-		if (a == 0)
+		if (a == 0 && *argv[b - argc] != 48)
 		{
 			printf("Error\n");
 			return (1);
