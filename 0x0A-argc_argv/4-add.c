@@ -12,6 +12,7 @@ int main(int argc, char **argv)
 {
 	int a = 0, b = argc + 1, sum = 0;
 
+	printf("%d\n", b);
 	while (argc > 0)
 	{
 		a = atoi(argv[b - argc]);
