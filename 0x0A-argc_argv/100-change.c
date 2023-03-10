@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int a, count = 0, coin_count = 0;
+	int a, count = 0, coin_count = 0, temp;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -29,8 +29,9 @@ int main(int argc, char **argv)
 		{
 			if (a >= coins[count])
 			{
-				coin_count += a / coins[count];
-				a = a - coin_count * coins[count];
+				temp = a / coins[count];
+				coin_count += temp;
+				a = a - temp * coins[count];
 			}
 			count++;
 		}
