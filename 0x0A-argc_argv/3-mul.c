@@ -14,7 +14,9 @@ int main(int argc, char **argv)
 	if (argc == 3)
 	{
 		a = *argv[1];
+		printf("%d\n", a);
 		b = *argv[2];
+		printf("%d\n", a);
 		prod = a * b;
 		printf("%d\n", prod);
 	}
