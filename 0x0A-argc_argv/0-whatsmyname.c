@@ -10,8 +10,6 @@
 
 int main(int argc  __attribute__((unused)), char **argv)
 {
-	int count = argc;
-
 	printf("%s\n", *argv++);
 	return (0);
 }
