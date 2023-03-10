@@ -15,6 +15,7 @@ int main(int argc, char **argv)
 	printf("%d\n", b);
 	while (argc > 0)
 	{
+		printf("%s\n", argv[b - argc]);
 		a = atoi(argv[b - argc]);
 		if (a == 0)
 		{
