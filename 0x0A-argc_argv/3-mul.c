@@ -13,10 +13,8 @@ int main(int argc, char **argv)
 	int a, b, prod;
 	if (argc == 3)
 	{
-		a = *argv[1];
-		printf("%d\n", a);
-		b = *argv[2];
-		printf("%d\n", a);
+		a = *argv[1] - 48;
+		b = *argv[2] - 48;
 		prod = a * b;
 		printf("%d\n", prod);
 	}
