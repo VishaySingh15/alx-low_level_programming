@@ -13,10 +13,8 @@ int main(int argc, char **argv)
 	int a, b, prod;
 	if (argc == 3)
 	{
-		a = *argv[1];
-		printf("%d\n", a);
-		b = *argv[2];
-		printf("%d\n", b);
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
 		prod = a * b;
 		printf("%d\n", prod);
 	}
