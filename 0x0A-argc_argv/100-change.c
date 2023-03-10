@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	a = atoi(argv[1]);
 	if (a == 0 || a < 0)
 	{
-		print("0\n");
+		printf("0\n");
 	}
 	else
 	{
