@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 	int a = 0, b = argc + 1, sum = 0;
 
-	while (argc)
+	while (argc > 0)
 	{
 		a = atoi(argv[b - argc]);
 		if (a == 0)
