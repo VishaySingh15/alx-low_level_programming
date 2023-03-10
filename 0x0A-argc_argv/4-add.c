@@ -10,12 +10,11 @@
 
 int main(int argc, char **argv)
 {
-	int a = 0, b = argc + 1, sum = 0;
+	int a = 0, b = argc, sum = 0;
 
-	printf("%d\n", b);
-	while (argc > 1)
+	while (argc > 0)
 	{
-		printf("%s\n", argv[b - argc]);
+		argc--;
 		a = atoi(argv[b - argc]);
 		if (a == 0)
 		{
@@ -23,7 +22,6 @@ int main(int argc, char **argv)
 			return (1);
 		}
 		sum += a;
-		argc--;
 	}
 	printf("%d\n", sum);
 	return (0);
