@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	{
 		while (a)
 		{
-			if (a > coins[count])
+			if (a >= coins[count])
 			{
 				coin_count += a / coins[count];
 				a = a - coin_count * coins[count];
