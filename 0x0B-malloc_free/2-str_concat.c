@@ -30,11 +30,9 @@ char *str_concat(char *s1, char *s2)
 	{
 		size2++;
 	}
-	printf("no error in s2 while");
 	if (size1 >= 0)
 	{
 		my_arr = malloc((size1 + size2) * sizeof(char) + 1);
-		printf("no error malloc");
 		if (my_arr != NULL)
 		{
 			while (size1 > 0)
