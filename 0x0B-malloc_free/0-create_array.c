@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
  * main - Prints the program name
@@ -8,8 +9,18 @@
  * Return: 0 Success
  */
 
-int main(int argc  __attribute__((unused)), char **argv)
+char *create_array(unsigned int size, char c)
 {
-	printf("%s\n", argv[0]);
-	return (0);
+	char *my_arr;
+
+	if (size != 0)
+	{
+		my_arr = malloc(size * sizeof(char));
+		if (my_arr =! NULL)
+		{
+			my_arr [0] = c;
+			return (my_arr);
+		}
+	}
+	return (NULL);
 }
