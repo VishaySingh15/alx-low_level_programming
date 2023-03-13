@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	char *my_arr;
 	int size = 0, count = 0;
 
-	while (*(str + count) !=0)
+	while (*(str + size) !=0)
 	{
 		size++;
 	}
