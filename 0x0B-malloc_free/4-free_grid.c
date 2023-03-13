@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "main.h"
 
-/**
- * alloc_grid - Creates a 2 dimensional array
- * @width: Width of array
+/*
+ * free_grid - Free memory of a 2d array
+ * @grid: 2D array
  * @height: Height of array
- * Return: my_array if successful and null if not
+ * Return: No return
  */
 
 void free_grid(int **grid, int height)
@@ -15,4 +15,5 @@ void free_grid(int **grid, int height)
 	{
 		free(grid[height]);
 	}
+	free(grid);
 }
