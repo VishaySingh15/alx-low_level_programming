@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 			while (size >= 0)
 			{
 				my_arr[count] = s1[count];
-				size--;
+				size1--;
 				count++;
 			}
 			return (my_arr);
