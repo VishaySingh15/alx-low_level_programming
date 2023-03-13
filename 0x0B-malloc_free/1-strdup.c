@@ -23,10 +23,10 @@ char *_strdup(char *str)
 	}
 	if (size >= 0)
 	{
-		my_arr = malloc(size * sizeof(char));
+		my_arr = malloc(size * sizeof(char) + 1);
 		if (my_arr != NULL)
 		{
-			while (size)
+			while (size >= 0)
 			{
 				my_arr[count] = str[count];
 				size--;
