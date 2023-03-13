@@ -3,17 +3,20 @@
 #include "main.h"
 
 /**
- * create_array - Creates and initiliazes an array of size n
- * @size: Size of array
- * @c: Initial Character
+ * _strdup - Creates a new pointer for the string
+ * @str: String to use
  * Return: my_array if successful and null if not
  */
 
 char *_strdup(char *str)
 {
 	char *my_arr;
-	int size = sizeof(str) / sizeof(char);
+	int size = 0, count = 0;
 
+	while (*(str + count) !=0)
+	{
+		size++;
+	}
 	if (size != 0)
 	{
 		my_arr = malloc(size * sizeof(char));
