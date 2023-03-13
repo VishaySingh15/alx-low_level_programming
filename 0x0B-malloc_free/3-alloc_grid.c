@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- * create_array - Creates and initiliazes an array of size n
- * @size: Size of array
- * @c: Initial Character
+ * alloc_grid - Creates a 2 dimensional array
+ * @width: Width of array
+ * @height: Height of array
  * Return: my_array if successful and null if not
  */
 
