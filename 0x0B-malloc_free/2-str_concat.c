@@ -11,6 +11,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	printf("no error in s1");
 	char *my_arr;
 	int size1 = 0, size2 = 0, count = 0;
 
