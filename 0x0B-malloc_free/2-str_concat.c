@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 		my_arr = malloc(size1 * sizeof(char) + 1);
 		if (my_arr != NULL)
 		{
-			while (size >= 0)
+			while (size1 >= 0)
 			{
 				my_arr[count] = s1[count];
 				size1--;
