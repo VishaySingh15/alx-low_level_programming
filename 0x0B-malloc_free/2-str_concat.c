@@ -12,7 +12,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *my_arr;
-	int size1 = 0, size2 = 0, count = 0, count2 = 0;
+	int size1, size2, count = 0, count2 = 0;
 
 	if (s1 == NULL)
 	{
@@ -22,14 +22,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	while (*(s1 + size1) != 0)
-	{
-		size1++;
-	}
-	while (*(s2 + size2) != 0)
-	{
-		size2++;
-	}
+	for (size1 = 0; s1[size1] != '\0'; size1++)
+		;
+	for (size2 = 0; s2[size1] != '\0'; size2++)
+		;
 	if (size1 >= 0)
 	{
 		my_arr = malloc((size1 + size2) * sizeof(char) + 1);
