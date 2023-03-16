@@ -3,9 +3,10 @@
 #include "main.h"
 
 /**
- * str_concat - Concatenates 2 strings
+ * string_nconcat - Concatenates 2 strings
  * @s1: String 1
  * @s2: String 2
+ * @n: number of characters to concatenate
  * Return: my_array if successful and null if not
  */
 
