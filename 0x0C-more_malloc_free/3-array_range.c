@@ -17,10 +17,10 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	
+
 	length = max - min + 1;
 	my_arr = malloc(length * sizeof(int));
-	
+
 	if (my_arr == NULL)
 	{
 		free(my_arr);
