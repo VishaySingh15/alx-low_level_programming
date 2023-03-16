@@ -5,7 +5,7 @@
 /**
  * _calloc - Creates an array
  * @nmemb: no of elements in array
- * @height: Element byte size
+ * @size: Element byte size
  * Return: my_array if successful and null if not
  */
 
