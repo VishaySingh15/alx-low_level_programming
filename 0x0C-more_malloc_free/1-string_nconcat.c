@@ -47,6 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			count2++;
 			count++;
 		}
+		my_arr[count] = 0;
 		return (my_arr);
 	}
 	free(my_arr);
