@@ -13,7 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *my_arr;
-	int size1, size2, count = 0, count2 = 0;
+	unsigned int size1, size2, count = 0, count2 = 0;
 
 	if (s1 == NULL)
 	{
