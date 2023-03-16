@@ -3,16 +3,15 @@
 #include "main.h"
 
 /**
- * _calloc - Creates an array
- * @nmemb: no of elements in array
- * @size: Element byte size
+ * array_range - Creates an with a range of numbers initialized
+ * @min: range min
+ * @max: Range max
  * Return: my_array if successful and null if not
  */
 
 int *array_range(int min, int max)
 {
-	int *my_arr;
-	int length, i;
+	int *my_arr, length, i;
 
 	if (min > max)
 		return (NULL);
