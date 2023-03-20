@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * new_dog - Initializes the details of a new dog
