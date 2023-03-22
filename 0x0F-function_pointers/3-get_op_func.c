@@ -2,10 +2,11 @@
 #include "calc.h"
 
 /**
- * op_add - adds 2 integers
+ * get_op_func - retrieves the correct op function
+ * @s: operator
  * @a: num 1
  * @b: num 2
- * Return: result
+ * Return: op function if op is valid, NULL is false
  */
 int (*get_op_func(char *s))(int a, int b)
 {
