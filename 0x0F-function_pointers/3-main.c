@@ -30,7 +30,12 @@ int main (int argc, char **argv)
 	}
 
 	func = get_op_func(s);
+	if (func == NULL)
+	{
+		printf("Error\n");
+		exit (99);
+	}
 	result = func(a, b);
-	printf("%d", result);
+	printf("%d\n", result);
 	return (0);
 }
