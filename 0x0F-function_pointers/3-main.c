@@ -11,7 +11,7 @@
  */
 int main (int argc, char **argv)
 {
-	int a, b, (*func)(int x, int y);
+	int a, b, (*func)(int x, int y), result;
 	char *s;
 
 	if (argc != 4)
@@ -30,6 +30,7 @@ int main (int argc, char **argv)
 	}
 
 	func = get_op_func(s);
-	printf("Error\n");
+	result = func(a, b);
+	printf("%d", result);
 	return (0);
 }
