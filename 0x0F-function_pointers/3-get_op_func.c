@@ -5,8 +5,6 @@
 /**
  * get_op_func - retrieves the correct op function
  * @s: operator
- * @a: num 1
- * @b: num 2
  * Return: op function if op is valid, NULL is false
  */
 int (*get_op_func(char *s))(int, int)
