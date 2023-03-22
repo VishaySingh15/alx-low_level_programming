@@ -2,11 +2,15 @@
 #include "function_pointers.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_name - prints a name
+ * @name: name to print
+ * @f: print function
+ * Return: No return
  */
 void print_name(char *name, void (*f)(char *))
 {
-    f(name);
+	if (name && f)
+	{
+		f(name);
+	}
 }
