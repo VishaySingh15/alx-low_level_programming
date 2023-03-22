@@ -8,17 +8,12 @@
  * @b: num 2
  * Return: op function if op is valid, NULL is false
  */
-int main (argc, **argv)
+int main (int argc, char **argv)
 {
-	int count = 0, a, b, result;
+	int a, b, result;
 	char s;
 
-	while (argv[count] != 0)
-	{
-		count++;
-	}
-
-	if (count != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit (98);
