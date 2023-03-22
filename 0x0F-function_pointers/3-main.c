@@ -12,7 +12,7 @@
 int main (int argc, char **argv)
 {
 	int a, b, result;
-	char s;
+	char *s;
 
 	if (argc != 4)
 	{
@@ -23,13 +23,13 @@ int main (int argc, char **argv)
 	a = atoi(argv[1]);
 	s = argv[2];
 	b = atoi(argv[3]);
-	if ((s == '/' || s == '%') && b == 0)
+	if ((*s == '/' || *s == '%') && b == 0)
 	{
 		printf("Error\n");
 		exit (100);
 	}
 
-	result = get_op_func(&s, a, b);
+	result = get_op_func(s, a, b);
 	printf("Error\n");
 	return (0);
 }
