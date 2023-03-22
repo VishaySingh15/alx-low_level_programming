@@ -8,7 +8,7 @@
  * @argv: array of arguments
  * Return: 0 Success
  */
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int a, b, (*func)(int x, int y), result;
 	char *s;
@@ -16,7 +16,7 @@ int main (int argc, char **argv)
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 
 	a = atoi(argv[1]);
@@ -25,14 +25,14 @@ int main (int argc, char **argv)
 	if ((*s == '/' || *s == '%') && b == 0)
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	}
 
 	func = get_op_func(s);
 	if (func == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 	result = func(a, b);
 	printf("%d\n", result);
