@@ -6,11 +6,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_name(char *name, void (*f)(char *))
 {
-    dog_t *my_dog;
-
-    my_dog = new_dog("", 3.5, "Bob");
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-    return (0);
+    f(*name);
 }
