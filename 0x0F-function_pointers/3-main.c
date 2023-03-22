@@ -3,11 +3,10 @@
 #include "3-calc.h"
 
 /**
- * get_op_func - retrieves the correct op function
- * @s: operator
- * @a: num 1
- * @b: num 2
- * Return: op function if op is valid, NULL is false
+ * main - performs an operation on 2 numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0 Success
  */
 int main (int argc, char **argv)
 {
