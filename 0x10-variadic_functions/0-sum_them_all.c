@@ -2,15 +2,15 @@
 #include "variadic_functions.h"
 
 /**
- * main - performs an operation on 2 numbers
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: 0 Success
+ * sum_them_all - adds all parameters of a function
+ * @n: number of argument
+ * Return: sum of functions
  */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
-	int i, sum = 0;
+	iunsigned int i;
+	int sum = 0;
 
 	if (n == 0)
 	{
