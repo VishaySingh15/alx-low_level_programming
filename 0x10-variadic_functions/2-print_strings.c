@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	
 		if (str)
 		{
-			printf("%s", va_arg(arg_list, char *));
+			printf("%s", str);
 		}
 		else
 		{
