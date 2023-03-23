@@ -14,5 +14,5 @@ int main()
 	int *ptr = a;
 	
 	printf("%p", *ptr);
-	return (0);,
+	return (0);
 }
