@@ -13,6 +13,6 @@ int main()
 	int a[] = {1,2,3};
 	int *ptr = a;
 	
-	printf("%p", *ptr);
+	printf("%p", ptr);
 	return (0);
 }
