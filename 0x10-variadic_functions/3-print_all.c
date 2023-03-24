@@ -3,9 +3,8 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - prints all arguments with separator
- * @separator: argument separator
- * @n: number of arguments
+ * print_all - prints all arguments in a format
+ * @format: argument format
  * Return: no return
  */
 void print_all(const char * const format, ...)
