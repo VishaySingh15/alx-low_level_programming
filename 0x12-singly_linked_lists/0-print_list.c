@@ -25,14 +25,5 @@ size_t print_list(const list_t *h)
 		}
 		next_ptr = next_ptr->next;
 	}
-	if (next_ptr->str)
-	{
-		printf("[%d] %s\n", h->len, h->str);
-	}
-	else
-	{
-		printf("[%d] %s\n", 0, "(nil)");
-	}
-	num ++;
 	return (num);
 }
