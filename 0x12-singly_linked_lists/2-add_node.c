@@ -10,7 +10,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *nodePtr = *head;
-	list_t new_node;
+	list_t *new_node;
 	unsigned int count = 0;
 	char *str_dup = strdup(str);
 
@@ -18,13 +18,18 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
+	{
+		return (NULL);
+	}
 	while (*(str_dup + count) != 0)
 	{
 		count ++;
 	}
-	new_node.next = nodePtr->next;
-	new_node.str = str_dup;
-	new_node.len = count;
-	nodePtr = &new_node;
+	new_node->next = nodePtr->next;
+	new_node->str = str_dup;
+	new_node->len = count;
+	nodePtr = new_node;
 	return (nodePtr);
 }
