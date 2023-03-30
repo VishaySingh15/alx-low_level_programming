@@ -9,13 +9,13 @@
  */
 void free_next(list_t *head)
 {
-	if (*head->next)
+	if (head->next)
 	{
-		free_next(*head->next);
+		free_next(head->next);
 	}
 	else
 	{
-		free(*head);
+		free(head);
 	}
 }
 
