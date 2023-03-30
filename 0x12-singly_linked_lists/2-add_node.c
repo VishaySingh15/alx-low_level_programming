@@ -9,7 +9,6 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *nodePtr = *head;
 	list_t *new_node;
 	size_t count = 0;
 	char *str_dup = strdup(str);
@@ -26,8 +25,8 @@ list_t *add_node(list_t **head, const char *str)
 
 	new_node->str = str_dup;
 	new_node->len = count;
-	new_node->next = nodePtr;
-	nodePtr = new_node;
+	new_node->next = *head;
+	*head = new_node;
 
-	return (nodePtr);
+	return (*head);
 }
