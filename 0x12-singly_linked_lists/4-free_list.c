@@ -9,7 +9,7 @@
  */
 void free_next(list_t *head)
 {
-	if (head->next)
+	if (head->next != NULL)
 	{
 		free_next(head->next);
 	}
