@@ -3,9 +3,10 @@
 #include <stdio.h>
 
 /**
- * list_len - counts the number os elements in a list
- * @h: pointer to first node
- * Return: number of elements
+ * add_node - adds new node at the beginning
+ * @head: pointer to first node
+ * @str: string to input
+ * Return: pointer to added node
  */
 list_t *add_node(list_t **head, const char *str)
 {
