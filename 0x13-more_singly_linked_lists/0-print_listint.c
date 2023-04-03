@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- * print_list - prints all elements of linked list
+ * print_listint - prints all elements of linked list
  * @h: pointer to first node
  * Return: number of elements
  */
-size_t print_listint(const listint_t *h)
+size_t print_listint(const listint_s *h)
 {
 	const listint_s *next_ptr = h;
 	size_t num = 0;
