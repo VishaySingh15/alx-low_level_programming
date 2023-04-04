@@ -29,8 +29,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		if (count == index - 1)
 		{
 			temp_node->n = current_ptr->n;
-			temp_node->next = current_ptr->next;
-			current_ptr = current_ptr->next;
+			temp_node->next = (current_ptr->next)->next;
+			current_ptr->next = temp_node->next;
 			free(temp_node);
 			return (1);
 		}
