@@ -18,15 +18,15 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		return (-1);
 	}
-	if (idx == 0)
+	if (index == 0)
 	{
-		*head = *head->next;
+		*head = (*head)->next;
 		free(current_ptr);
 		return (1);
 	}
 	while (current_ptr != NULL)
 	{
-		if (count == idx - 1)
+		if (count == index - 1)
 		{
 			temp_node->n = current_ptr->n;
 			temp_node->next = current_ptr->next;
