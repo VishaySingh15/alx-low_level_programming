@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_listint - counts number of elements in list
+ * listint_len - counts number of elements in list
  * @h: pointer to first node
  * Return: number of elements
  */
