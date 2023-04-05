@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - frees a int list
+ * free_listint2 - frees a int list
  * @head: head of the linked list.
  * Return: no return.
  */
