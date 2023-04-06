@@ -28,9 +28,9 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[len] == '1')
 		{
-			dec += 2**len;
+			dec += 2^len;
 		}
 		len--;
 	}
-	return (dec)
+	return (dec);
 }
