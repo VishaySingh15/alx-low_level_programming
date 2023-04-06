@@ -9,7 +9,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec = 0;
+	unsigned int dec = 0, power = 1;
 	int len = 0;
 
 	if (!b)
@@ -29,9 +29,10 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[len] == '1')
 		{
-			dec += 2^len;
+			dec += power;
 		}
 		len--;
+		power *= 2;
 	}
 	return (dec);
 }
