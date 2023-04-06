@@ -1,13 +1,11 @@
-#include "lists.h"
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
- * insert_nodeint_at_index - inserts a node at an index
- * @head: pointer to a pointer to first node
- * @idx: index in list to insert at
- * @n: interger to insert
- * Return: pointer to node in list
+ * binary_to_uint - converts binary to int
+ * @b: binary string pointer
+ * Return: decimal if valid else 0
  */
 unsigned int binary_to_uint(const char *b)
 {
