@@ -12,11 +12,11 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int count = 0, valid;
 
-	valid = n >> 0;
+	valid = n;
 	while (valid)
 	{
 		count++;
-		valid = n >> 1;
+		valid = valid >> 1;
 	}
 	if (index < count)
 		return((n >> index) & 1);
