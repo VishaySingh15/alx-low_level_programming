@@ -10,25 +10,16 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int diff = n ^ m, power = 1;
+	int diff = n ^ m, valid;
 	unsigned int n_bits = 0;
 
-	if (diff < 0)
-	{
-		diff = -diff;
-	}
-	while (power < diff)
-	{
-		power *= 2;
-	}
 	while (diff)
 	{
-		if (diff >= power)
+		if (diff & 1)
 		{
-			diff -= power;
 			n_bits++;
 		}
-		power /= 2;
+		diff = diff >> 1;
 	}
 	return (n_bits);
 }
