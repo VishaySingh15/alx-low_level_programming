@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
- * clear_bit - clears bit at position index
- * @n: int pointer
- * @index: bit position
- * Return: 1 if success -1 for failure
+ * flip_bits - determines how many bits
+ * in n need to flip to become m
+ * @n: int 1
+ * @m: int 2
+ * Return: number of bits to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
