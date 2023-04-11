@@ -10,13 +10,22 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int power = 1, index_dup = index;
+	unsigned int power = 1, index_dup = index, count = 0, valid;
 
-	while (index_dup)
+	valid = *n;
+	while (valid)
 	{
-		power *= 2;
-		index_dup--;
+		count++;
+		valid = valid >> 1;
 	}
-	*n = *n - power;
+	if (index < count)
+	{
+		while (index_dup)
+		{
+			power *= 2;
+			index_dup--;
+		}
+		*n = *n - power;
+	}
 	return (1);
 }
