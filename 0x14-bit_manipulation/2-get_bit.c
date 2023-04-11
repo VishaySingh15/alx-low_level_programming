@@ -5,10 +5,20 @@
 /**
  * get_bit - gets bit at position index
  * @n: int 
- * @ index: bit position
+ * @index: bit position
  * Return: bit at position index
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	return((n >> index) & 1);
+	unsigned int count = 0, valid;
+
+	valid = n >> 0;
+	while (valid)
+	{
+		count++;
+		valid = n >> 1;
+	}
+	if (index < count)
+		return((n >> index) & 1);
+	return (-1);
 }
