@@ -24,7 +24,9 @@ int set_bit(unsigned long int *n, unsigned int index)
 		index_dup--;
 	}
 	if (index < count)
+	{
 		*n = *n + power;
 		return (1);
+	}
 	return (-1);
 }
