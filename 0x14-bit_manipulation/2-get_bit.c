@@ -4,7 +4,7 @@
 
 /**
  * get_bit - gets bit at position index
- * @n: int 
+ * @n: int
  * @index: bit position
  * Return: bit at position index
  */
@@ -19,6 +19,6 @@ int get_bit(unsigned long int n, unsigned int index)
 		valid = valid >> 1;
 	}
 	if (index < count)
-		return((n >> index) & 1);
+		return ((n >> index) & 1);
 	return (-1);
 }
