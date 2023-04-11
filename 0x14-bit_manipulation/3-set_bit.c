@@ -10,23 +10,13 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int count = 0, valid, power = 1, index_dup = index;
+	unsigned int power = 1, index_dup = index;
 
-	valid = *n;
-	while (valid)
-	{
-		count++;
-		valid = valid >> 1;
-	}
 	while (index_dup)
 	{
 		power *= 2;
 		index_dup--;
 	}
-	if (index < count)
-	{
-		*n = *n + power;
-		return (1);
-	}
-	return (-1);
+	*n = *n + power;
+	return (1);
 }
