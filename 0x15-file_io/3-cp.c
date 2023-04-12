@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int file_from, file_to, letters;
+	int file_from, file_to;
 	char *buffer = malloc(sizeof(char) * 1024);
 	ssize_t nread, nwrite;
 	/*
