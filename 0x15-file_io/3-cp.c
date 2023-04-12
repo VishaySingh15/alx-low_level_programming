@@ -10,10 +10,11 @@
  */
 int main(int argc, char **argv)
 {
+	/*
 	int file_from, file_to, letters;
 	const char *buffer = malloc(sizeof(char) * 1024);
 	ssize_t nread, nwrite;
-
+	*/
 	printf("%s%d\n", "Number of arguments :", argc);
 	printf("%s", argv[1]);
 	/*
