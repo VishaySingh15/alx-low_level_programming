@@ -10,14 +10,14 @@
  */
 int main(int argc, char **argv)
 {
-	int file_from, file_to;
 	char *buffer = malloc(sizeof(char) * 1024);
-	ssize_t nread, nwrite;
+	ssize_t nread, nwrite, file_from, file_to;
 
 	if (argc != 3)
+	{
 		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
-
+	}
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from < 0)
 	{
