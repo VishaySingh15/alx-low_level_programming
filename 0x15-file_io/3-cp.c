@@ -11,7 +11,7 @@
 int main(int argc, char **argv)
 {
 	int file_from, file_to, letters;
-	const char *buffer = malloc(sizeof(char) * 1024);
+	char *buffer = malloc(sizeof(char) * 1024);
 	ssize_t nread, nwrite;
 	/*
 	printf("%s%d\n", "Number of arguments :", argc);
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "%s%s\n", "Error: Can't read from file ", argv[1]);
 		exit (98);
 	}
-	nwrite = write(argv[2], buffer, nread);
+	nwrite = write(file_to, buffer, nread);
 	if (nwrite < 0)
 	{
 		dprintf(STDERR_FILENO, "%s%s\n", "Error: Can't write to ", argv[2]);
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 	while (nread)
 	{
 		nread = read(file_from, buffer, 1024);
-		nwrite = write(argv[2], buffer, nread);
+		nwrite = write(file_to, buffer, nread);
 	}
 	close(file_from);
 	close(file_to);
